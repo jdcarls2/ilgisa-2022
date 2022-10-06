@@ -1,0 +1,882 @@
+map_symbol,soil_type,favorability,productivity_index
+2,Cisne silt loam,Favorable,97
+3,Hoyleton silt loam,Favorable,96
+4,Richview silt loam,Favorable,98
+5,Blair silt loam,Unfavorable,92
+6,Fishhook silt loam,Unfavorable,86
+7,Atlas silt loam,Unfavorable,79
+8,Hickory loam,Favorable,81
+9,Sandstone rock land,Crop yield data not available,
+10,Plumfield silty clay loam,Unfavorable,72
+12,Wynoose silt loam,Favorable,86
+13,Bluford silt loam,Favorable,90
+14,Ava silt loam,Unfavorable,89
+15,Parke silt loam,Favorable,97
+16,Rushville silt loam,Favorable,97
+17,Keomah silt loam,Favorable,105
+18,Clinton silt loam,Favorable,107
+19,Sylvan silt loam,Favorable,98
+21,Pecatonica silt loam,Favorable,100
+22,Westville silt loam,Favorable,100
+23,Blount silt loam,Favorable,93
+24,Dodge silt loam,Favorable,108
+25,Hennepin loam,Unfavorable,80
+26,Wagner silt loam,Favorable,96
+27,Miami silt loam,Favorable,99
+28,Jules silt loam,Favorable,108
+29,Dubuque silt loam,Unfavorable,85
+30,Hamburg silt loam,Favorable,95
+31,Pierron silt loam,Favorable,90
+34,Tallula silt loam,Favorable,116
+35,Bold silt loam,Favorable,97
+36,Tama silt loam,Favorable,123
+37,Worthen silt loam,Favorable,126
+38,Rocher loam,Favorable,96
+40,Dodgeville silt loam,Favorable,92
+41,Muscatine silt loam,Favorable,130
+42,Papineau fine sandy loam,Favorable,91
+43,Ipava silt loam,Favorable,126
+44,"Pella silty clay loam, bedrock substratu",Favorable,100
+45,Denny silt loam,Favorable,105
+46,Herrick silt loam,Favorable,118
+47,Virden silt loam,Favorable,122
+48,Ebbert silt loam,Favorable,111
+49,Watseka loamy fine sand,Favorable,82
+50,Virden silty clay loam,Favorable,119
+51,Muscatune silt loam,Favorable,130
+53,Bloomfield fine sand,Favorable,75
+54,Plainfield sand,Favorable,67
+55,Sidell silt loam,Favorable,117
+56,Dana silt loam,Favorable,116
+57,Montmorenci silt loam,Favorable,103
+59,Lisbon silt loam,Favorable,121
+60,La Rose silt loam,Favorable,104
+61,Atterberry silt loam,Favorable,117
+62,Herbert silt loam,Favorable,116
+63,Blown-out land,Crop yield data not available,
+64,Parr fine sandy loam,Favorable,95
+67,Harpster silty clay loam,Favorable,117
+68,Sable silty clay loam,Favorable,126
+69,Milford silty clay loam,Favorable,113
+70,Beaucoup silty clay loam,Favorable,116
+71,Darwin silty clay,Favorable,98
+72,Sharon silt loam,Favorable,108
+73,Ross loam,Favorable,119
+74,Radford silt loam,Favorable,120
+75,Drury silt loam,Favorable,112
+76,Otter silt loam,Favorable,123
+77,Huntsville silt loam,Favorable,127
+78,Arenzville silt loam,Favorable,115
+79,Menfro silt loam,Favorable,106
+81,Littleton silt loam,Favorable,126
+82,Millington loam,Favorable,111
+83,Wabash silty clay,Favorable,103
+84,Okaw silt loam,Favorable,85
+85,Jacob clay,Favorable,73
+86,Osco silt loam,Favorable,125
+87,Dickinson sandy loam,Favorable,92
+88,Sparta loamy sand,Favorable,81
+89,Maumee fine sandy loam,Favorable,83
+90,Bethalto silt loam,Favorable,118
+91,Swygert silty clay loam,Unfavorable,104
+92,Sarpy sand,Favorable,74
+93,Rodman gravelly loam,Unfavorable,74
+94,Limestone rock land,Crop yield data not available,
+95,Shale rock land,Crop yield data not available,
+96,Eden silty clay loam,Unfavorable,72
+97,Houghton peat,Favorable,107
+98,Ade loamy fine sand,Favorable,91
+99,Sandstone and limestone roc,Crop yield data not available,
+100,Palms muck,Favorable,104
+101,"Brenton silt loam, bedrock substratum",Favorable,111
+102,La Hogue loam,Favorable,107
+103,Houghton muck,Favorable,115
+104,Virgil silt loam,Favorable,117
+105,Batavia silt loam,Favorable,114
+106,Hitt sandy loam,Favorable,100
+107,Sawmill silty clay loam,Favorable,123
+108,Bonnie silt loam,Favorable,98
+109,Racoon silt loam,Favorable,94
+111,Rubio silt loam,Favorable,101
+112,Cowden silt loam,Favorable,103
+113,Oconee silt loam,Favorable,105
+114,O'Fallon silt loam,Unfavorable,89
+115,Dockery silt loam,Favorable,114
+116,Whitson silt loam,Favorable,103
+119,Elco silt loam,Favorable,99
+120,Huey silt loam,Unfavorable,79
+122,Colp silt loam,Unfavorable,87
+123,Riverwash,Crop yield data not available,
+124,Beaucoup gravelly clay loam,Favorable,116
+125,Selma loam,Favorable,114
+126,"Bonpas silt loam, overwash",Favorable,117
+127,Harrison silt loam,Favorable,115
+128,Douglas silt loam,Favorable,112
+131,Alvin fine sandy loam,Favorable,98
+132,Starks silt loam,Favorable,106
+134,Camden silt loam,Favorable,106
+136,Brooklyn silt loam,Favorable,99
+137,"Clare silt loam, bedrock substratum",Favorable,113
+138,Shiloh silty clay loam,Favorable,115
+138+,"Shiloh silt loam, overwash",Favorable,111
+141,Wesley fine sandy loam,Favorable,100
+142,Patton silty clay loam,Favorable,117
+145,Saybrook silt loam,Favorable,117
+146,Elliott silt loam,Favorable,111
+147,Clarence silty clay loam,Unfavorable,95
+148,Proctor silt loam,Favorable,120
+149,Brenton silt loam,Favorable,125
+150,Onarga sandy loam,Favorable,97
+151,Ridgeville fine sandy loam,Favorable,101
+152,Drummer silty clay loam,Favorable,127
+153,Pella silty clay loam,Favorable,120
+154,Flanagan silt loam,Favorable,127
+155,Stockland loam,Unfavorable,82
+157,Symerton loam,Favorable,114
+159,Pillot silt loam,Favorable,106
+162,Gorham silty clay loam,Favorable,115
+164,Stoy silt loam,Favorable,96
+165,Weir silt loam,Favorable,94
+166,Cohoctah loam,Favorable,118
+167,Lukin silt loam,Favorable,96
+171,Catlin silt loam,Favorable,122
+172,Hoopeston sandy loam,Favorable,97
+173,McGary silt loam,Unfavorable,89
+174,Chaseburg silt loam,Favorable,107
+175,Lamont fine sandy loam,Favorable,86
+176,Marissa silt loam,Favorable,109
+178,Ruark fine sandy loam,Favorable,88
+179,Minneiska loam,Favorable,92
+180,Dupo silt loam,Favorable,116
+182,"Peotone mucky silty clay loam, marl substratum",Favorable,106
+183,Shaffton loam,Favorable,102
+184,Roby fine sandy loam,Favorable,98
+188,Beardstown loam,Favorable,100
+189,Martinton silt loam,Favorable,115
+191,Knight silt loam,Favorable,107
+192,Del Rey silt loam,Favorable,100
+193,Mayville silt loam,Favorable,98
+194,Morley silt loam,Favorable,92
+197,Troxel silt loam,Favorable,124
+198,Elburn silt loam,Favorable,127
+199,Plano silt loam,Favorable,126
+200,Orio sandy loam,Favorable,97
+201,Gilford fine sandy loam,Favorable,98
+204,Ayr sandy loam,Favorable,96
+205,Metea silt loam,Favorable,86
+206,Thorp silt loam,Favorable,112
+208,Sexton silt loam,Favorable,102
+210,Lena muck,Favorable,111
+212,Thebes silt loam,Favorable,98
+213,Normal silt loam,Favorable,118
+214,Hosmer silt loam,Unfavorable,93
+216,Stookey silt loam,Favorable,102
+217,Twomile silt loam,Favorable,93
+218,Newberry silt loam,Favorable,101
+219,Millbrook silt loam,Favorable,114
+221,Parr silt loam,Favorable,105
+223,Varna silt loam,Favorable,103
+224,Strawn silt loam,Favorable,93
+225,Holton silt loam,Favorable,89
+226,Wirt silt loam,Favorable,94
+227,Argyle silt loam,Favorable,108
+228,Nappanee silt loam,Unfavorable,78
+229,Monee silt loam,Favorable,88
+230,Rowe silty clay,Favorable,98
+231,Evansville silt loam,Favorable,114
+232,Ashkum silty clay loam,Favorable,112
+233,Birkbeck silt loam,Favorable,108
+234,Sunbury silt loam,Favorable,116
+235,Bryce silty clay,Favorable,107
+236,Sabina silt loam,Favorable,108
+238,Rantoul silty clay,Favorable,96
+239,Dorchester silt loam,Favorable,113
+240,Plattville silt loam,Favorable,106
+241,Chatsworth silt loam,Unfavorable,69
+242,Kendall silt loam,Favorable,110
+243,St. Charles silt loam,Favorable,108
+244,Hartsburg silty clay loam,Favorable,119
+248,McFain silty clay,Favorable,105
+249,Edinburg silty clay loam,Favorable,112
+250,Velma loam,Favorable,100
+252,Harvel silty clay loam,Favorable,111
+256,Pana silt loam,Favorable,102
+257,Clarksdale silt loam,Favorable,114
+258,Sicily silt loam,Favorable,110
+259,Assumption silt loam,Favorable,106
+261,Niota silt loam,Favorable,87
+262,Denrock silt loam,Favorable,102
+264,El Dara silt loam,Favorable,89
+265,Lomax loam,Favorable,102
+266,Disco sandy loam,Favorable,96
+267,Caseyville silt loam,Favorable,112
+268,Mt. Carroll silt loam,Favorable,119
+270,"Stronghurst silt loam, sandy substratum",Favorable,111
+271,Timula silt loam,Favorable,100
+272,Edgington silt loam,Favorable,109
+274,Seaton silt loam,Favorable,106
+275,Joy silt loam,Favorable,127
+277,Port Byron silt loam,Favorable,127
+278,Stronghurst silt loam,Favorable,111
+279,Rozetta silt loam,Favorable,106
+280,Fayette silt loam,Favorable,108
+282,Chute fine sand,Favorable,66
+283,Downsouth silt loam,Favorable,120
+284,Tice silty clay loam,Favorable,118
+285,Carmi loam,Favorable,95
+286,Carmi sandy loam,Favorable,94
+287,Chauncey silt loam,Favorable,105
+288,Petrolia silty clay loam,Favorable,103
+290,Warsaw silt loam,Favorable,105
+291,Xenia silt loam,Favorable,104
+292,Wallkill silt loam,Favorable,109
+293,Andres silt loam,Favorable,120
+294,Symerton silt loam,Favorable,116
+295,Mokena silt loam,Favorable,111
+296,Washtenaw silt loam,Favorable,116
+297,Ringwood silt loam,Favorable,115
+298,Beecher silt loam,Favorable,101
+300,Westland clay loam,Favorable,107
+301,Grantsburg silt loam,Unfavorable,90
+302,Ambraw clay loam,Favorable,101
+304,Landes fine sandy loam,Favorable,89
+306,Allison silty clay loam,Favorable,120
+307,Iona silt loam,Favorable,105
+308,Alford silt loam,Favorable,107
+310,McHenry silt loam,Favorable,101
+311,Ritchey silt loam,Unfavorable,74
+312,Edwards muck,Favorable,97
+313,Rodman loam,Unfavorable,74
+314,Joliet silty clay loam,Favorable,87
+315,Channahon silt loam,Unfavorable,71
+316,Romeo silt loam,Unfavorable,43
+317,Millsdale silty clay loam,Favorable,97
+318,Lorenzo loam,Unfavorable,93
+319,Aurelius muck,Favorable,85
+320,Frankfort silt loam,Unfavorable,90
+321,Du Page silt loam,Favorable,111
+322,Russell silt loam,Favorable,103
+323,Casco silt loam,Unfavorable,91
+324,Ripon silt loam,Favorable,98
+325,Dresden silt loam,Favorable,102
+326,Homer silt loam,Favorable,101
+327,Fox silt loam,Favorable,96
+328,Holly silt loam,Favorable,96
+329,Will silty clay loam,Favorable,115
+330,Peotone silty clay loam,Favorable,108
+331,Haymond silt loam,Favorable,117
+332,Billett sandy loam,Favorable,88
+333,Wakeland silt loam,Favorable,114
+334,Birds silt loam,Favorable,103
+335,Robbs silt loam,Favorable,92
+336,Wilbur silt loam,Favorable,113
+337,Creal silt loam,Favorable,98
+338,Hurst silt loam,Unfavorable,88
+339,Wellston silt loam,Unfavorable,80
+340,Zanesville silt loam,Unfavorable,84
+341,"Ambraw silty clay loam, sandy su",Favorable,101
+342,Matherton silt loam,Favorable,101
+343,Kane silt loam,Favorable,110
+344,Harvard silt loam,Favorable,111
+345,Elvers silt loam,Favorable,104
+346,Dowagiac silt loam,Favorable,99
+347,Canisteo silt loam,Favorable,111
+348,Wingate silt loam,Favorable,107
+349,Zumbro sandy loam,Favorable,87
+350,"Drummer silty clay loam, gravelly substratum",Favorable,122
+351,"Elburn silt loam, gravelly substratum",Favorable,120
+352,"Palms silty clay loam, overwash",Favorable,112
+353,Toronto silt loam,Favorable,114
+354,Hononegah loamy coarse sand,Favorable,74
+355,Binghampton sandy loam,Favorable,93
+356,Elpaso silty clay loam,Favorable,127
+357,Vanpetten loam,Favorable,94
+359,"Fayette silt loam, till substratum",Favorable,105
+360,Slacwater silt loam,Favorable,100
+361,Kidder silt loam,Favorable,91
+362,Whitaker variant loam,Favorable,105
+363,Griswold loam,Favorable,103
+365,Aptakisic silt loam,Favorable,102
+366,Algansee fine sandy loam,Favorable,83
+367,Beach sand,Crop yield data not available,
+368,Raveenwash silty clay loam,Favorable,95
+369,Waupecan silt loam,Favorable,123
+370,Saylesville silt loam,Favorable,94
+371,"St. Charles silt loam, sandy substratum",Favorable,100
+372,"Kendall silt loam, sandy substratum",Favorable,104
+373,"Camden silt loam, sandy substratum",Favorable,96
+374,"Proctor silt loam, sandy substratum",Favorable,108
+375,Rutland silt loam,Favorable,118
+376,"Cisne silt loam, bench",Favorable,97
+377,"Hoyleton silt loam, bench",Favorable,96
+378,Lanier fine sandy loam,Favorable,72
+379,Dakota silt loam,Favorable,99
+380,Fieldon silt loam,Favorable,101
+381,Craigmile sandy loam,Favorable,102
+382,Belknap silt loam,Favorable,104
+383,Newvienna silt loam,Favorable,119
+384,Edwardsville silt loam,Favorable,124
+385,Mascoutah silty clay loam,Favorable,125
+386,Downs silt loam,Favorable,119
+387,Ockley silt loam,Favorable,102
+388,Wenona silt loam,Favorable,114
+389,"Hesch loamy sand, shallow variant",Unfavorable,50
+390,Hesch fine sandy loam,Unfavorable,89
+391,Blake silty clay loam,Favorable,103
+392,"Urban land, loamy Orthents complex",Crop yield data not available,
+393,"Marseilles silt loam, gravelly substratum",Unfavorable,96
+394,Haynie silt loam,Favorable,105
+395,Ceresco loam,Favorable,104
+396,Vesser silt loam,Favorable,109
+397,Boone loamy fine sand,Unfavorable,61
+398,Wea silt loam,Favorable,115
+400,Calco silty clay loam,Favorable,121
+401,Okaw silty clay loam,Favorable,78
+402,Colo silty clay loam,Favorable,122
+403,Elizabeth silt loam,Unfavorable,54
+404,Titus silty clay loam,Favorable,104
+405,Zook silty clay,Favorable,103
+406,Paxico silt loam,Favorable,106
+407,"Udifluvents, loamy",Crop yield data not available,
+408,"Aquents, loamy",Crop yield data not available,
+409,"Aquents, clayey",Crop yield data not available,
+410,Woodbine silt loam,Favorable,87
+411,Ashdale silt loam,Favorable,110
+412,Ogle silt loam,Favorable,116
+413,Gale silt loam,Favorable,89
+414,Myrtle silt loam,Favorable,110
+415,Orion silt loam,Favorable,116
+416,Durand silt loam,Favorable,112
+417,Derinda silt loam,Unfavorable,84
+418,Schapville silt loam,Unfavorable,94
+419,Flagg silt loam,Favorable,106
+420,Piopolis silty clay loam,Favorable,95
+421,Kell silt loam,Favorable,83
+422,Cape silty clay loam,Favorable,91
+423,Millstadt silt loam,Favorable,97
+424,Shoals silt loam,Favorable,113
+425,Muskingum stony silt loam,Unfavorable,61
+426,Karnak silty clay,Favorable,89
+427,Burnside silt loam,Favorable,85
+428,Coffeen silt loam,Favorable,117
+429,Palsgrove silt loam,Favorable,92
+430,Raddle silt loam,Favorable,122
+431,Genesee silt loam,Favorable,111
+432,Geff silt loam,Favorable,97
+433,Floraville silt loam,Favorable,90
+434,Ridgway silt loam,Favorable,104
+435,Streator silty clay loam,Favorable,116
+436,Meadowbank silt loam,Favorable,121
+437,Redbud silt loam,Favorable,101
+438,Aviston silt loam,Favorable,121
+439,"Jasper silt loam, sandy substratum",Favorable,104
+440,Jasper silt loam,Favorable,115
+441,Wakenda silt loam,Favorable,123
+442,Mundelein silt loam,Favorable,123
+443,Barrington silt loam,Favorable,115
+445,Newhaven loam,Favorable,111
+446,Springerton loam,Favorable,117
+447,"Canisteo silt loam, sandy substratum",Favorable,105
+448,Mona silt loam,Favorable,104
+449,Amiesburg - Sarpy complex,Favorable,100
+450,Brouillett silt loam,Favorable,118
+451,Lawson silt loam,Favorable,124
+452,Riley silty clay loam,Favorable,112
+453,Muren silt loam,Favorable,105
+454,Iva silt loam,Favorable,110
+455,Mixed alluvial land,Crop yield data not available,
+456,Ware silt loam,Favorable,104
+457,Booker silty clay,Favorable,79
+458,"Fayette silt loam, sandy substratum",Favorable,104
+459,"Tama silt loam, sandy substratum",Favorable,120
+460,Ginat silt loam,Favorable,95
+461,Weinbach silt loam,Favorable,93
+462,Sciotoville silt loam,Favorable,93
+463,Wheeling silt loam,Favorable,96
+464,Wallkill silty clay loam,Favorable,97
+465,Montgomery silty clay loam,Favorable,98
+466,Bartelso silt loam,Favorable,112
+467,Markland silt loam,Unfavorable,93
+468,Lakaskia silt loam,Favorable,107
+469,Emma silty clay loam,Favorable,98
+470,Keller silt loam,Unfavorable,101
+471,Clarksville cherty silt loam,Unfavorable,54
+472,Baylis silt loam,Favorable,96
+473,Rossburg loam,Favorable,117
+474,Piasa silt loam,Unfavorable,92
+475,Elsah cherty silt loam,Favorable,97
+476,Biddle silt loam,Unfavorable,103
+477,Winfield silt loam,Favorable,105
+479,"Aurelius muck, sandy substratum",Favorable,92
+480,Moundprairie silty clay loam,Favorable,103
+481,Raub silt loam,Favorable,119
+482,Uniontown silt loam,Favorable,104
+483,Henshaw silt loam,Favorable,104
+484,Harco silt loam,Favorable,124
+485,Richwood silt loam,Favorable,120
+486,Bertrand silt loam,Favorable,101
+487,Joyce silt loam,Favorable,117
+488,Hooppole loam,Favorable,107
+489,"Hurst silt loam, sandy substratum",Unfavorable,83
+490,Odell silt loam,Favorable,114
+491,Ruma silt loam,Favorable,103
+492,Normandy silt loam,Favorable,109
+493,Bonfield silt loam,Favorable,108
+494,Kankakee fine sandy loam,Favorable,102
+495,Corwin silt loam,Favorable,108
+496,Fincastle silt loam,Favorable,107
+499,Fella silty clay loam,Favorable,119
+501,Morocco fine sand,Favorable,77
+503,Rockton loam,Favorable,90
+504,Sogn silt loam,Unfavorable,54
+505,Dunbarton silt loam,Unfavorable,66
+506,Hitt silt loam,Favorable,105
+508,"Selma loam, bedrock substratum",Favorable,112
+509,Whalan loam,Favorable,79
+511,"Dunbarton silt loam, cherty variant",Unfavorable,53
+512,Danabrook silt loam,Favorable,122
+513,Granby loamy sand,Favorable,96
+515,Bunkum silty clay loam,Favorable,98
+516,Faxon clay loam,Favorable,102
+517,Marine silt loam,Favorable,92
+518,Rend silt loam,Unfavorable,93
+523,Dunham silty clay loam,Favorable,117
+524,Zipp silty clay loam,Favorable,91
+525,"Joslin loam, bedrock substratum",Unfavorable,84
+526,Grundelein silt loam,Favorable,122
+527,Kidami silt loam,Favorable,102
+528,Lahoguess loam,Favorable,111
+529,Selmass loam,Favorable,107
+530,Ozaukee silt loam,Favorable,96
+531,Markham silt loam,Favorable,101
+533,Urban land,Crop yield data not available,
+534,"Urban land, clayey Orthents complex",Crop yield data not available,
+535,"Orthents, stony",Crop yield data not available,
+536,"Dumps, mine",Crop yield data not available,
+537,"Hesch fine sandy loam, gray subsoil variant",Unfavorable,99
+538,Emery silt loam,Favorable,112
+539,"Wenona silt loam, loamy substratum",Favorable,116
+540,Frankville silt loam,Favorable,86
+541,Graymont silt loam,Favorable,119
+542,Rooks silt loam,Favorable,122
+543,Piscasaw silt loam,Favorable,108
+544,Torox silt loam,Favorable,109
+545,Windere silt loam,Favorable,112
+546,Keltner silt loam,Favorable,104
+547,Eleroy silt loam,Favorable,93
+548,"Marseilles silt loam, moderately wet",Unfavorable,94
+549,Marseilles silt loam,Unfavorable,94
+551,Gosport silt loam,Unfavorable,75
+552,"Drummer silty clay loam, till substratum",Favorable,120
+553,Bryce-Calamine variant complex,Favorable,103
+554,Kernan silt loam,Favorable,100
+555,Shadeland silt loam,Favorable,85
+556,High Gap loam,Unfavorable,84
+557,Millstream silt loam,Favorable,115
+558,Breeds silty clay loam,Favorable,105
+559,Lindley loam,Favorable,83
+560,St. Clair silt loam,Unfavorable,83
+561,Whalan and NewGlarus silt loams,Favorable,85
+562,"Port Byron silt loam, sandy substratum",Favorable,115
+563,"Seaton silt loam, sandy substratum",Favorable,101
+564,Waukegan silt loam,Favorable,106
+565,Tell silt loam,Favorable,99
+566,Rockton and Dodgeville soils,Favorable,91
+567,Elkhart silt loam,Favorable,111
+568,"Niota silty clay loam, clayey subsurface variant",Favorable,78
+569,Medary silty clay loam,Favorable,76
+570,Martinsville silt loam,Favorable,101
+571,Whitaker silt loam,Favorable,106
+572,Loran silt loam,Favorable,107
+573,Tuscola loam,Favorable,90
+574,"Ogle silt loam, silt loam",Favorable,102
+575,subsoil variant,Favorable,119
+576,"Joy silt loam, sandy substratum",Favorable,94
+577,Zwingle silt loam,Crop yield data not available,
+578,Terrace escarpment,Favorable,93
+579,"Dorchester silt loam, cobbly substratum",Unfavorable,75
+580,Beavercreek loam,Favorable,96
+581,"Fayette silty clay loam, karst",Unfavorable,82
+582,Tamalco silt loam,Favorable,96
+583,Homen silt loam,Favorable,103
+584,Pike silt loam,Unfavorable,77
+585,Grantfork silty clay loam,Favorable,90
+586,Negley loam,Favorable,100
+587,Nokomis silt loam,Favorable,116
+588,Terril loam,Favorable,83
+589,"Sparta loamy sand, loamy substratum",Favorable,98
+590,Bowdre silty clay,Favorable,105
+591,Cairo silty clay,Favorable,102
+592,Fults silty clay,Favorable,106
+593,Nameoki silty clay,Favorable,106
+594,Chautauqua silty clay loam,Favorable,115
+595,Reddick silty clay loam,Favorable,97
+596,Coot loam,Favorable,115
+597,Marbletown silt loam,Favorable,117
+598,Armiesburg silty clay loam,Favorable,83
+599,Bedford silt loam,Favorable,73
+600,Baxter cherty silt loam,Favorable,122
+601,Huntington silt loam,Favorable,102
+602,Nolin silty clay loam,Favorable,92
+603,Newark silty clay loam,Favorable,116
+604,Blackoar silt loam,Crop yield data not available,
+605,Sandy alluvial land,Unfavorable,76
+606,Ursa silt loam,Unfavorable,58
+607,Goss gravelly silt loam,Favorable,114
+608,Monterey silty clay loam,Favorable,95
+609,Mudhen clay loam,Favorable,110
+610,Crane silt loam,Favorable,109
+611,Tallmadge sandy loam,Favorable,114
+613,Sepo silty clay loam,Favorable,92
+614,Oskaloosa silt loam,Favorable,114
+615,Chenoa silt loam,Favorable,69
+618,Vanmeter silty clay loam,Favorable,95
+619,Senachwine silt loam,Favorable,110
+620,Parkville silty clay,Unfavorable,82
+621,Darmstadt silt loam,Unfavorable,98
+622,Coulterville silt loam,Favorable,106
+623,Wyanet silt loam,Favorable,119
+624,Kishwaukee silt loam,Favorable,101
+625,Caprell silt loam,Favorable,121
+626,Geryune silt loam,Favorable,110
+627,Kish loam,Favorable,92
+628,Miami fine sandy loam,Favorable,81
+629,Lax silt loam,Favorable,100
+630,Crider silt loam,Favorable,92
+631,Navlys silty clay loam,Favorable,96
+632,Princeton fine sandy loam,Favorable,107
+633,Copperas silty clay loam,Favorable,104
+634,Traer silt loam,Favorable,112
+635,Blyton silt loam,Favorable,122
+636,Lismod silt loam,Favorable,110
+637,Parmod silt loam,Favorable,113
+638,"Muskego silty clay loam, overwash",Favorable,110
+639,Muskego muck,Favorable,84
+640,"Wynoose silt loam, bench",Favorable,90
+641,"Bluford silt loam, bench",Favorable,93
+644,Quiver silty clay loam,Favorable,98
+646,Rennsselaer loam,Crop yield data not available,
+647,"Fluvaquents, loamy",Favorable,104
+648,Lawler loam,Favorable,123
+649,Clyde clay loam,Favorable,121
+650,Nachusa silt loam,Favorable,116
+651,Prairieville silt loam,Favorable,74
+652,Keswick loam,Favorable,84
+654,Passport silt loam,Favorable,98
+655,Moline silty clay ,Unfavorable,78
+656,"Ursa silt loam, moderately wet",Favorable,104
+657,Octagon silt loam,Favorable,95
+658,Burksville silt loam,Unfavorable,71
+660,Sonsac very cobbly silt loam,Unfavorable,86
+661,Coatsburg silt loam,Favorable,100
+662,Atkinson loam,Favorable,111
+663,Barony silt loam,Favorable,118
+665,Clare silt loam,Favorable,91
+667,Stonelick fine sandy loam,Favorable,113
+668,Kaneville silt loam,Favorable,104
+669,Somonauk silt loam,Unfavorable,71
+670,Saffell gravelly sandy loam,Favorable,81
+671,Aholt silty clay,Favorable,126
+672,Biggsville silt loam,Favorable,104
+673,Cresent loam,Favorable,98
+674,"Onarga fine sandy loam, till substratum",Favorable,121
+675,Dozaville silt loam,Favorable,119
+678,Greenbush silt loam,Favorable,118
+679,Mannon silt loam,Favorable,126
+680,Blackberry silt loam,Favorable,105
+681,Campton silt loam,Crop yield data not available,
+682,Dubuque-Orthents-Fayette complex,Favorable,116
+683,Medway silty clay loam,Favorable,127
+684,Lawndale silt loam,Favorable,122
+685,Broadwell silt loam,Favorable,103
+686,Middletown silt loam,Favorable,122
+687,Parkway silt loam,Favorable,115
+688,Penfield loam,Unfavorable,76
+689,Braidwood loam,Favorable,67
+690,Coloma loamy sand,Unfavorable,82
+691,Brookside stony silty clay loam,Favorable,75
+692,Beasley silt loam,Favorable,95
+694,Menfro - Wellston silt loams,Favorable,94
+695,Menfro - Baxter loam,Favorable,110
+696,Fosterburg silt loam,Favorable,105
+697,Zurich silt loam,Favorable,117
+698,Wauconda silt loam,Favorable,110
+699,Grays silt loam,Favorable,122
+700,Timewell silt loam,Favorable,87
+701,Westmore silt loam,Favorable,97
+702,Menfro - Hickory silt loams,Favorable,95
+703,Ruma - Hickory silt loams,Favorable,93
+705,Pierron - Burksville silt loams,Favorable,126
+706,Buckhart silt loam,Favorable,88
+709,Boyer sandy loam,Favorable,101
+711,Osceola silt loam,Favorable,100
+712,Hatfield silt loam,Favorable,118
+713,Spaulding silty clay loam,Unfavorable,57
+715,Judyville fine sandy loam,Favorable,124
+717,Arrowsmith silt loam,Favorable,84
+718,Stockey - Clarksville complex,Crop yield data not available,
+720,Marsh,Favorable,118
+721,Aetna silt loam,Favorable,127
+722,Drummer and Elpaso silty clay loams,Favorable,121
+723,Drummer - Milford silty clay loams,Favorable,110
+724,Reesville silt loam,Favorable,103
+725,Rozetta-Elco silt loams,Favorable,123
+726,Otter-Lawson silt loams,Favorable,120
+727,"Elburn silt loam, sandy substratum",Favorable,97
+728,Waukee loam,Favorable,108
+730,Winnebago silt loam,Crop yield data not available,
+731,Bethesda channery silty clay loam,Favorable,100
+732,Nasset silt loam,Favorable,93
+737,Appleriver silt loam,Favorable,123
+738,"Tama silt loam, sandy substratum",Unfavorable,57
+739,Milton silt loam,Unfavorable,57
+740,Milton silt loam,Favorable,114
+741,Darroch silt loam,Favorable,73
+742,Oakville fine sand,Favorable,95
+743,"Dickinson sandy loam, loamy substratum",Favorable,99
+745,Ridott silt loam,Unfavorable,100
+746,Shullsburg silt loam,Favorable,97
+747,Calamine silt loam,Favorable,113
+748,Milford silty clay loams,Favorable,119
+749,"Plano silt loam, sandy loam",Favorable,126
+750,"Buckhart silt loam, till substratum",Favorable,93
+751,Skelton fine sandy loam,Favorable,94
+752,Crawleyville loam,Favorable,97
+753,Oneco silt loam,Favorable,98
+754,Massbach silt loam,Crop yield data not available,
+755,Fairpoint gravelly clay loam,Favorable,75
+756,Lamoille silt loam,Favorable,101
+757,Wyanet fine sandy loam,Favorable,90
+759,Senachwine fine sandy loam,Favorable,90
+760,"Udolpho loam, sandy substratum",Favorable,109
+761,"Marshan loam, sandy substratum",Unfavorable,76
+763,Eleva sandy loam,Favorable,115
+764,Joslin silt loam,Favorable,93
+765,Coyne fine sandy loam,Favorable,100
+766,Trempealeau silt loam,Favorable,118
+767,Lamartine silt loam,Favorable,122
+768,Prophetstown silt loam,Favorable,77
+769,Backbone loamy sand,Unfavorable,79
+770,Edmund silt loam,Favorable,91
+771,Udolpho loam,Favorable,100
+772,Hayfield loam,Favorable,110
+774,Marshan loam,Favorable,96
+776,Saude loam,Favorable,122
+777,Comfrey clay loam,Favorable,97
+779,Adrian muck,Favorable,68
+780,Chelsea loamy fine sand,Favorable,93
+781,Grellton sandy loam,Favorable,105
+782,Friesland sandy loam,Favorable,116
+783,Juneau silt loam,Favorable,85
+784,Flagler sandy loam,Unfavorable,56
+785,Berks loam,Favorable,73
+786,Lacrescent cobbly silty clay loam,Unfavorable,77
+787,Frondorf loam,Favorable,94
+789#,Banlic silt loam,Favorable,97
+789#,Ambraw-Ceresco-Sarpy complex,Unfavorable,76
+791,"Volney silt loam, bedrock substratum",Favorable,96
+792,Rush silt loam,Favorable,115
+793,Bowes silt loam,Unfavorable,55
+796,"Berks, Muskingum and Wiekert soils",Unfavorable,85
+797,Huey-Burksville silt loam,Favorable,87
+799,Hickory-Homen silty clay loam,Crop yield data not available,
+800,"Arents, loamy",Crop yield data not available,
+801,Psamments,Crop yield data not available,
+802,"Orthents, silty",Crop yield data not available,
+803,"Orthents, loamy",Crop yield data not available,
+804,Orthents,Crop yield data not available,
+805,"Orthents, acid",Crop yield data not available,
+806,"Orthents, clayey",Crop yield data not available,
+807,"Orthents, clayey-skeletal",Crop yield data not available,
+808,Aquents-Orthents complex,Crop yield data not available,
+809,"Orthents, sandy-skeletal",Crop yield data not available,
+810,"Orthents, loamy - skeletal, acid, steep",Crop yield data not available,
+811,Oil-brine damaged land,Crop yield data not available,
+812,Aquolls,Crop yield data not available,
+813,Typic Hapludalfs,Crop yield data not available,
+814,"Orthents, bedrock subs.,silty, pits, complex",Favorable,128
+815,Muscatune-Buckhart complex,Favorable,95
+816,"Udorthents, silty",Crop yield data not available,
+817,Stookey-Timula-Orthents complex,Unfavorable,78
+818,Channahon-Hesch fine sandy loam,Favorable,125
+819,Flanagan-Catlin silt loams,Unfavorable,76
+820,Hennepin-Vanmeter complex,Unfavorable,84
+821,Hennepin-Casco complex,Favorable,71
+823,Morristown silt loam,Favorable,86
+824,Schuline silt loam,Favorable,82
+825,Swanwick silt loam,Favorable,59
+826,"Lenzburg silt loam, acid loam",Crop yield data not available,
+827,"Orthents, silty, acid substratum",Favorable,112
+828,Broadwell-Onarga complex,Favorable,106
+829,Broadwell-Sparta complex,Favorable,123
+830,Biggsville-Mannon silt loams,Crop yield data not available,
+832,Landfill,Favorable,86
+833,Menfro - Clarksville complex,Favorable,87
+834,Menfro - Goss complex,Unfavorable,83
+835,Wellston - Westmore silt loams Earthen dam,Crop yield data not available,
+836,Hamburg - Lacrescent complex,Favorable,86
+837,Limestone rockland - Lacrescent complex,Crop yield data not available,
+838,Fayette - Goss complex,Favorable,88
+840,Zurick and Ozaukee silt loams,Favorable,101
+841,Carmi - Westland complex,Favorable,99
+843,Bonnie and Petrolia soils,Favorable,101
+844,Ava-Blair complex,Unfavorable,90
+845,Darwin and Jacob silty clays,Favorable,89
+846,Kamak and Cape silty clays,Favorable,91
+847,Fluvaquents - Orthents complex,Crop yield data not available,
+848,Drummer - Barrington - Mundelein complex,Favorable,123
+849,Milford - Martinton complex,Favorable,114
+850,Hickory-Hosmer silt loams,Unfavorable,86
+851,Mefro-Ursa silt loams,Favorable,95
+852,Mefro-Wellston silt loams ,Favorable,95
+853,Alford-Westmore silt loams,Favorable,99
+854#,Markham-Ashkum-Beecher complex,Favorable,105
+854#,Menfro - Westmore loam,Favorable,99
+855#,Timewell and Ipava soils ,Favorable,123
+855#,Ruma-Westmore silt loams ,Favorable,96
+856,Stookey and Timula soils,Favorable,101
+857,Strawn-Hennepin loams,Unfavorable,88
+858#,Port Byron-Mt. Carroll-Urban land,Crop yield data not available,
+858#,Port Byron-Mt. Carroll silt loams,Favorable,123
+859,Blair-Ursa silt loams,Unfavorable,87
+860#,Hosmer-Ursa silt loams,Unfavorable,87
+860#,Homen - Atlas silt loams,Favorable,90
+861,Ursa-Hickory complex,Unfavorable,78
+862,"Pits, sand",Crop yield data not available,
+863,"Pits, clay",Crop yield data not available,
+864,"Pits, quarries",Crop yield data not available,
+865,"Pits, gravel",Crop yield data not available,
+866,"Dumps, slurry",Crop yield data not available,
+867,Oil-waste land,Crop yield data not available,
+868,"Pits, organic",Crop yield data not available,
+869,"Pits, quarries-Orthents complex",Crop yield data not available,
+870,Blake-Beaucoup complex,Favorable,108
+871,Lenzburg silt loam,Favorable,80
+872,Rapatee silty clay loam,Favorable,97
+873,Dunbarton-Dubuque complex,Unfavorable,73
+874,Dickinson-Hamburg complex,Favorable,93
+875,Lenzlo silty clay loam,Favorable,85
+876,Lenzwheel silty clay loam,Favorable,75
+877,Blake - Slacwater silt loams,Favorable,102
+878,Coulterville-Grantfork silty clay loams,Unfavorable,90
+880,Coulterville-Darmstadt complex,Unfavorable,92
+881,Coulterville-Hoyleton-Darmstadt complex,Unfavorable,94
+882,Oconee-Darmstadt-Coulterville silt loams,Unfavorable,97
+883,Senachwine - Hennepin complex,Favorable,89
+884,Bunkum-Coulterville silty clay loams,Unfavorable,98
+885,Virden-Fosterburg silt loams,Favorable,116
+886,Ruma-Ursa silty clay loams,Unfavorable,93
+887,Darmstadt-Grantfork complex,Unfavorable,81
+888,Passport-Grantfork complex,Unfavorable,83
+889,Bluford-Darmstadt complex,Unfavorable,87
+890,Ursa-Atlas complex,Unfavorable,78
+891,Cisne-Piasa complex,Unfavorable,96
+892,Sawmill-Lawson complex,Favorable,123
+893,Catlin-Saybrook complex,Favorable,120
+894,Herrick-Biddle-Piasa silt loams,Unfavorable,108
+895,Fayette-Westville complex,Favorable,105
+896,Wynoose-Huey complex,Unfavorable,83
+897,Bunkum-Atlas silty clay loams,Unfavorable,92
+898,Hickory-Sylvan complex,Favorable,88
+899,Raddle-Sparta complex,Favorable,106
+900,Hickory-Wellston silt loams,Unfavorable,80
+901,Ipava-Osco complex,Favorable,126
+902,Ipava-Sable complex,Favorable,126
+903,Muskego and Houghton mucks,Favorable,112
+904,"Muskego and Peotone soils, ponded",Favorable,109
+905,NewGlarus-Lamoille complex,Favorable,86
+906,Redbud-Hurst silty clay loams,Unfavorable,97
+907,Redbud-Colp silty clay loams,Unfavorable,96
+908,Hickory-Kell silt loams,Favorable,83
+909,Coulterville-Oconee silt loams,Unfavorable,101
+910,Timula-Miami complex,Favorable,100
+911,Timula-Hickory complex,Favorable,93
+912,Hoyleton-Darmstadt loam,Unfavorable,91
+913,Marseilles-Hickory complex,Unfavorable,89
+914,Atlas-Grantfork complex,Unfavorable,80
+915,Elco-Ursa silt loams,Unfavorable,90
+916,Darmstadt-Oconee silt loams,Unfavorable,92
+917,Oakville-Tell complex,Favorable,84
+918,Marseilles-Atlas loam,Unfavorable,89
+919,Rodman-Fox complex,Unfavorable,83
+920,Rushville-Huey silt loams,Unfavorable,91
+921,Faxon-Ripon complex,Favorable,101
+922,Alford-Hurst silty clay loams,Unfavorable,100
+923,Urban land-Markham-Ashkum complex,Crop yield data not available,
+924,Urban land-Milford-Martinton complex,Crop yield data not available,
+925,Urban land-Frankfort-Bryce complex,Crop yield data not available,
+926,Urban land- Drummer-Barrington complex,Crop yield data not available,
+927,Blair-Atlas silt loams,Unfavorable,88
+928,NewGlarus-Palsgrove silt loams,Favorable,93
+929,Ava-Hickory complex,Unfavorable,87
+930,Goss-Alford complex,Unfavorable,78
+931,Seaton-Goss complex,Unfavorable,87
+932,Clinton-El Dara complex,Favorable,100
+933,Hickory-Clinton complex,Favorable,92
+934,Blair-Grantfork complex,Unfavorable,87
+935,Miami-Hennepin loam,Unfavorable,92
+936,Fayette-Hickory loam,Favorable,98
+937,Seaton-Hickory complex,Favorable,96
+938,Miami-Casco complex,Unfavorable,96
+939,Rodman-Warsaw complex,Unfavorable,87
+940,Zanesville-Westmore silt loams,Unfavorable,85
+941,Virden-Piasa silt loams,Unfavorable,108
+942,Seaton-Oakville complex,Favorable,93
+943,Seaton-Timula silt loams,Favorable,104
+944,Velma-Coatsburg silt loams,Unfavorable,95
+945,Hickory-High Gap silt loams,Unfavorable,82
+946,Hickory-Atlas complex,Unfavorable,81
+947,"Lamont, Tell and Bloomfield soils",Favorable,88
+948,Fayette-Clarksville complex,Unfavorable,87
+949,Eleroy and Derinda soils,Unfavorable,89
+950,Dubuque and Palsgrove soils,Unfavorable,88
+951,Palsgrove and Woodbine soils,Favorable,90
+952,Tell-Lamont complex,Favorable,95
+953,Hosmer-Lax silt loams,Unfavorable,88
+954,Alford-Baxter complex,Favorable,94
+955,Muskingum and Berks soils,Unfavorable,59
+956,Brandon and Saffell soils,Unfavorable,83
+957,Elco-Atlas silt loams,Unfavorable,91
+958,Hickory and Hennepin soils,Unfavorable,81
+959,Strawn-Chute complex,Favorable,82
+960,Hickory-Sylvan-Fayette silt loams,Favorable,92
+961,Burkhardt-Saude complex,Favorable,82
+962,Sylvan-Bold complex,Favorable,98
+963,Hickory and Sylvan soils,Favorable,88
+964#,Hennepin and Miami soils,Unfavorable,88
+964#,Miami and Hennepin soils,Favorable,92
+965,Tallula-Bold silt loams,Favorable,109
+966,Miami-Russell silt loams,Favorable,101
+967,Hickory-Gosport complex,Unfavorable,79
+968,Birkbeck-Miami silt loams,Favorable,105
+969,Rodman-Casco complex,Unfavorable,81
+970,Keller-Coatsburg complex,Unfavorable,95
+971,Fishhook-Atlas complex,Unfavorable,84
+972,Casco-Fox complex,Unfavorable,93
+973,Dubuque and Dunbarton soils,Unfavorable,78
+974,Dickinson-Onarga complex,Favorable,94
+975,Alvin-Lamont complex,Favorable,93
+976,Neotoma-Rock outcrop complex,Crop yield data not available,
+977,Neotoma-Wellston complex,Unfavorable,74
+978,Wauconda and Beecher silt loams,Favorable,111
+979,Grays and Markham silt loams,Favorable,106
+980,Zurich and Morley silt loams,Favorable,100
+981,Wauconda and Frankfort silt loams,Unfavorable,106
+982,Aptakisic and Nappanee silt loams,Unfavorable,92
+983,Zurich and Nappanee silt loams,Unfavorable,94
+984,Barrington and Varna silt loams,Favorable,110
+985,Alford-Bold complex,Favorable,103
+986,Wellston-Berks complex,Unfavorable,70
+987,Atlas-Grantfork variant complex,Unfavorable,77
+988,Westmore-Neotoma complex,Unfavorable,80
+989,Mundelein and Elliott soils,Favorable,118
+990,Stookey-Bodine complex,Unfavorable,90
+991,Cisne-Huey complex,Unfavorable,90
+992,Hoyleton-Tamalco complex,Unfavorable,90
+993,Cowden-Piasa complex,Unfavorable,99
+994,Oconee-Tamalco loam,Unfavorable,96
+995,Herrick-Piasa complex,Unfavorable,107
+996,Velma-Walshville complex,Unfavorable,93
+997,Hickory-Hennepin complex,Unfavorable,81
+998,Hickory-Negley complex,Favorable,86
+999,Alford-Hickory complex,Favorable,97

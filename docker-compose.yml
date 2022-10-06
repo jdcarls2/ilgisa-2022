@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  database:
+    image: 'postgis/postgis:latest'
+
+    ports:
+      - 55432:5432
+
+    environment:
+      POSTGRES_USER: gis
+      POSTGRES_PASSWORD: gis
+      POSTGRES_DB: ilgisa2022
+
+    volumes:
+      - ./db-data/:/var/lib/postgresql/data/

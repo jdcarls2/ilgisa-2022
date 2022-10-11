@@ -1,10 +1,22 @@
+########
+# Name:         Farm Card Calculations
+# Author:       Josh Carlson, Kendall County IL
+# Last Updated: 07-Oct-2022
+# Description:  A script to calculate farmland features for import into Devnet
+# Output:       A .txt file
+########
+
+
 ## Modules
 import geopandas as gp
 import pandas as pd
 import numpy as np
 import requests
+from pathlib import Path
+from datetime import datetime
+import re
 
-## Globals
+## Globals -- Change these as needed
 # Spatial reference for layers
 sr = "{'wkid': 3435}"
 
@@ -17,36 +29,44 @@ soils_url = 'https://maps.co.kendall.il.us/server/rest/services/Hosted/Assessor_
 # Landuse REST service
 landuse_url = 'https://maps.co.kendall.il.us/server/rest/services/Hosted/Assessor_Landuse/FeatureServer/0/query?'
 
-def calc_farms(pin_list, out_path, return_df=False):
-    """
-    A standalone version of the farm cards notebook calculation.
+# Prepare default output
+out_file = Path.expanduser(Path(f"~/Desktop/farms_{datetime.now().strftime('%Y%m%d-%H%M')}.txt"))
+    
+## Drop any existing file by same name
+if Path.exists(out_file):
+    print('Output file already exists. Removing!')
+    Path.remove(out_file)
+Path.touch(out_file)
+print('Good to go!')
 
-        Parameters:
-            pin_list (list): A list of PINs as strings, i.e., ['pin1', 'pin2', ... 'pinN']
-            out_path (str): The directory and filename for the output of the calculation
+## Warnings start at False
+warnings = False
 
-        Returns:
-            A dataframe of the calculated values, if `return_df` is set to True.
-    """
+## Get a list of PINs from variable text input
+pin_string = input('Enter PINs: ')
+pin_list = re.split('\n|,|&', re.sub(' |-', '', pin_string))
+pins = ','.join(["'" + p.replace('-', '') + "'" for p in pin_list])
 
-    ## Turn list of strings into double-quoted strings
-    pin_list = ["'" + pin + "'" for pin in pin_list]
+## Parcels DF
+# Request parameters
+parcels_params = {
+    'where': f"pin_dashless IN ({pins})",
+    'outFields': 'gross_acres, pin_dashless',
+    'outSR': sr,
+    'f': 'geojson'
+}
 
-    ## Parcels DF
-    parcels_params = {
-        'where': f"pin IN ({','.join(pin_list)})",
-        'outFields': 'gross_acres, pin',
-        'outSR': sr,
-        'f': 'geojson'
-    }
+parcels = requests.get(parcels_url, parcels_params)
+parcels_df = gp.read_file(parcels.text)
 
-    parcels = requests.get(parcels_url, parcels_params)
+parcels_df['calc_area'] = parcels_df.area
 
-    p_df = gp.read_file(parcels.text)
+### Iterate over p_df and calculate per parcel, append to output file
+n = 0
 
-    p_df['calc_area'] = p_df.area
+while n < len(parcels_df):
+    p_df = parcels_df.iloc[n:n+1]
 
-    ## Landuse and Soils
     # Spatial Filter
     bbox = ','.join([str(i) for i in p_df.total_bounds])
 
@@ -64,7 +84,6 @@ def calc_farms(pin_list, out_path, return_df=False):
 
     # Soils
     soils = requests.get(soils_url, farm_params)
-
     s_df = gp.read_file(soils.text)
 
     # Landuse
@@ -81,7 +100,7 @@ def calc_farms(pin_list, out_path, return_df=False):
         'gross_acres',
         'gis_acres',
         'calc_area',
-        'pin',
+        'pin_dashless',
         'soil_type',
         'slope',
         'landuse_type',
@@ -94,10 +113,7 @@ def calc_farms(pin_list, out_path, return_df=False):
     df['part_acres'] = df.area / df['calc_area'] * df['gross_acres']
 
     # Drop other columns
-    df.drop(columns=['gross_acres', 'calc_area'], inplace=True)
-
-    # Remove PIN hyphens
-    df.loc[:,'pin'] = df['pin'].str.replace('-', '')
+    df.drop(columns=['calc_area'], inplace=True)
 
     # LU to string
     df.loc[:, 'landuse_type'] = '0' + df['landuse_type'].astype('str')
@@ -105,9 +121,28 @@ def calc_farms(pin_list, out_path, return_df=False):
 
     ## Finish up acreage
     # Aggregate
-    out_cols = ['pin', 'soil_type', 'slope', 'landuse_type']
+    out_cols = ['pin_dashless', 'soil_type', 'slope', 'landuse_type']
 
-    df = df.groupby(by=out_cols, as_index=False).sum()
+    aggs = {
+        'soil_type':'first',
+        'slope':'first',
+        'landuse_type':'first',
+        'pin_dashless':'first',
+        'gross_acres':'max',
+        'part_acres':'sum'
+    }
+
+    df = df.groupby(by=out_cols, as_index=False).agg(aggs).reset_index(drop=True)
+
+    ## Check acreage sums
+    qc = df.groupby('pin_dashless').agg({'gross_acres':'max', 'part_acres':'sum'}).reset_index()
+    qc['diff'] = qc['gross_acres'] - round(qc['part_acres'], 4)
+
+    outliers = qc.query('diff != 0')
+
+    if len(outliers) > 0:
+        print(f"ACREAGE MISMATCH OF {qc.loc[0,'diff']:f} ON PARCEL {qc.loc[0,'pin_dashless']}")
+        warnings = True
 
     # Round of to 4 decimals
     df.loc[:, 'part_acres'] = round(df.loc[:, 'part_acres'], 4)
@@ -115,56 +150,14 @@ def calc_farms(pin_list, out_path, return_df=False):
     # Drop 0s
     df = df[df.loc[:, 'part_acres'] > 0]
 
-    ## Add Values
-    # Productivity Index
-    pi_df = pd.read_csv('resources/soil_PI_2021.csv')
+    # Remove extra fields
+    df.drop(columns=['gross_acres'], inplace=True)
 
-    # Slope and Erosion
-    se_df = se_df = pd.read_csv('resources/soil_slope_erosion_2021.csv')
+    df.to_csv(out_file, sep='\t', header=False, index=False, mode='a')
 
-    # Merge In to DF
-    df = df.merge(pi_df, how='left', left_on='soil_type', right_on='map_symbol', suffixes=('','_desc'))
-    df = df.merge(se_df, how='left', left_on='slope', right_on='erosion_code')
+    n += 1
 
-    ## Adjust Values
-    # Adjusted PI
-    df['adj_PI'] = df['productivity_index'] * df['coeff_fav']
-
-    # Unfavored
-    df[['adj_PI']] = df[['adj_PI']].where(df['favorability'] == 'Favorable', df['productivity_index'] * df['coeff_unf'], axis=0)
-
-    ## Equalized Assessment Values
-    # Add table
-    eav_df = pd.read_csv('resources/eav_2021.csv')
-
-    # Calculate sub 82 PI EAV
-    sub82 = pd.DataFrame({'avg_PI': np.arange(1,82)})
-
-    sub82['eav'] = 199.29 - (((207.47-199.29)/5)*(82-sub82['avg_PI']))
-
-    eav_df = eav_df.append(sub82)
-
-    df[['adj_PI']] = df[['adj_PI']].round()
-
-    df = df.merge(eav_df, how='left', left_on='adj_PI', right_on='avg_PI')
-
-    # Adjust by landuse type
-    df['eav_adj']=0
-
-    df[['eav_adj']] = df[['eav']].where(df['landuse_type']=='02', 0)
-
-    # permanent pasture
-    df.loc[df['landuse_type']=='03', 'eav_adj'] = df['eav']/3
-
-    # other farmland
-    df.loc[df['landuse_type']=='04', 'eav_adj'] = df['eav']/6
-
-    # contributory wasteland
-    df.loc[df['landuse_type'] == '05', 'eav_adj'] = 33.22
-
-    df['value'] = df['part_acres'] * df['eav_adj']
-
-    df.to_csv(out_path, sep='\t', header=False)
-
-    if return_df:
-        return df
+if warnings:
+    print('Completed with warnings. Check output before importing file!')
+else:
+    print('Completed!')

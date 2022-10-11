@@ -1,5 +1,6 @@
-.ipynb_checkpoints/farm-cards-checkpoint.ipynb
+.ipynb_checkpoints/
 .vscode/settings.json
-__pycache__/farm_cards.cpython-38.pyc
+__pycache__/
 test.txt
 outliers.csv
+/resources/farms.gdb/

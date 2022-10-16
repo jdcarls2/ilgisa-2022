@@ -1,3 +1,4 @@
 /db-data/
 **/.ipynb_checkpoints
 *.gdb/
+/EB/
